@@ -8,7 +8,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
 
@@ -28,7 +27,7 @@ public class RegistrationController {
             model.put("message", "User exists!!");
             return "registration";
         }
-        return "redirect:/login";
+        return "redirect:/login_1";
     }
 
     @GetMapping("/activate/{code}")

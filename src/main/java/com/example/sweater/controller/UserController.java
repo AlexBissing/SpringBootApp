@@ -47,7 +47,7 @@ public class UserController {
         model.addAttribute("username", user.getUsername());
         model.addAttribute("email", user.getEmail());
 
-        return "profile";
+        return "profile_1";
     }
 
     @PostMapping("profile")
@@ -58,6 +58,6 @@ public class UserController {
     ) {
         userService.updateProfile(user, password, email);
 
-        return "redirect:/user/profile";
+        return "redirect:/user/profile_1";
     }
 }
